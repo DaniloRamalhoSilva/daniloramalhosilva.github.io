@@ -1,6 +1,6 @@
 window.onload = function () {
-    let larguraDoQuadro = 50;
-    let auturaDoQuadro = 50;    
+    let larguraDoQuadro = 30;
+    let auturaDoQuadro = 30;    
     let totalDoQuado = larguraDoQuadro * auturaDoQuadro;
     let tagPaletaCores = document.getElementsByClassName('color');
     let tagBotao = document.getElementById('clear-board');
