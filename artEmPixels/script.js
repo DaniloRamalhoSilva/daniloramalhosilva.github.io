@@ -1,9 +1,7 @@
 window.onload = function () {
     let larguraDoQuadro = 50;
-    let auturaDoQuadro = 50;
-    let tamanhoDoPixel = 5;
+    let auturaDoQuadro = 50;    
     let totalDoQuado = larguraDoQuadro * auturaDoQuadro;
-    let tagQuadro = document.getElementById('pixel-board');
     let tagPaletaCores = document.getElementsByClassName('color');
     let tagBotao = document.getElementById('clear-board');
     let tagPixels = document.getElementsByClassName('pixel');
