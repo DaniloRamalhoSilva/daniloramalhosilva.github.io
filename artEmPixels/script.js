@@ -10,9 +10,9 @@ window.onload = function () {
     let tagCores = document.getElementById('color-palette');
 
     //cria cores aleatorias
-    let coresProntas = ['Black', 'White', 'Beige', 'Yellow', 'Orange', 'Red', 'Pink', 'Purple', 'Blue', 'Green', 'Brown', 'Grey']
+    let coresProntas = ['Black', 'transparent', 'White', 'Beige', 'Yellow', 'Orange', 'Red', 'Pink', 'Purple', 'Blue', 'Green', 'Brown', 'Grey']
     let cores = []
-    for (i = 0; i <= 23; i += 1) {
+    for (i = 0; i <= 22; i += 1) {
         cores.push(gerarCor());
     }    
     cores.sort((a, b) => a[0] - b[0] > 0 ? 1 : -1 );

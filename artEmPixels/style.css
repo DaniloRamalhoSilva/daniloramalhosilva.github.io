@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap');
 
-
-
-body {
-    background-image: url(imagem/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp);
-    margin: 0px;
-}
-
 #heder {
     left: 0px;
     top: 0px;
@@ -19,13 +12,8 @@ body {
     border-bottom: 7px solid #2fc18c;
     background-color: #036b52;
     color: #fff;
-
 }
 
-#imag {
-    display: inline-block;
-    margin-left: 40px;
-}
 
 #titulo {
     margin-left: 32%;
@@ -40,42 +28,52 @@ body {
 }
 
 .image-45 {
+    display: inline-block;
+    margin-left: 40px;
     width: 84px;
     height: 50px;
     max-width: 80%;
 }
 
 #main {
-    
+
     padding-left: 20px;
     margin: auto;
     margin-top: 20px;
-   margin-bottom: 20px;
-   
+    margin-bottom: 20px;
+
 }
 
 #color-palette {
     padding: 4px;
     border: solid 2px black;
-    width: 50px;    
-    display: inline-block;    
+    width: 50px;
+    display: inline-block;
     vertical-align: middle;
-    
+
 
 }
 
 #painel {
     position: absolute;
-    margin-left: 300px;
+    margin-left: 150px;
     display: inline-block;
     vertical-align: middle;
-   
+    
+}
+
+#gabarito {
+    
+    margin-left: 550px;
+    margin-top: 25px;
+    display: inline-block;
+    
 }
 
 .color {
     width: 20px;
     height: 20px;
-    margin: 1px;    
+    margin: 1px;
     display: inline-block;
     border: 1px solid black;
 }
@@ -105,31 +103,37 @@ body {
     display: table-row;
 }
 
-#footer{
+
+
+
+
+
+
+#footer {
     text-align: right;
     width: 100%;
-    padding: 5px ;    
-    background-color: rgb(68, 73, 85);
-    position: absolute;
+    padding: 5px;
+    background-color: rgb(68, 73, 85);    
     bottom: 0;
+    margin-top: 20px;
 }
 
-.icon{
+.icon {
     margin: 5px;
     width: 30px;
 }
 
-#contIcon{    
+#contIcon {
     display: inline-block;
     padding-right: 20px;
     vertical-align: middle;
 }
 
-#textFooter{
+#textFooter {
     text-align: center;
     margin-right: 150px;
     width: 650px;
     display: inline-block;
     color: white;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
