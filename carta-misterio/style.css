@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.3;
+    color: white;
+}
+
+body{
+    background-image: url(images/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body main{
+    
+}
+
+.heder {
+    left: 0px;
+    top: 0px;
+    right: 0px;    
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 25px 0px;
+    border-bottom: 7px solid #2fc18c;
+    background-color: #036b52;
+    color: #fff;
+
+    display:flex;    
+    align-items:center;
+    justify-content: space-around;
+    
+}
+
+.image-45 {      
+    width: 84px;
+    height: 50px;   
+    margin-left: 40px;   
+}
+
+#titulo{
+    width: 80%;    
+    text-align: center; 
+    margin-right: 20px;   
+}
+
+.main{
+    width: 80%;    
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #3c574dcb;;
+    border-radius: 25px;
+    padding: 30px;
+    
+}
+
+.carta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-around;
+    align-items: center;    
+    width: 100%;
+    height:200px;
+}
+
+#carta-texto{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(214, 217, 220);
+    border-radius: 3px;
+    width: 75%;
+    padding: 7px;
+    font-size: 14px;
+    color: black;
+}
+
+.buttons {
+    background-color: #3c9c3e; /* Green */
+    border: solid 0.5px #358536;;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.buttons:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.footer{
+    float: left;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(88, 92, 102);     
+    justify-content: space-between;
+    padding: 10px 0px;
+   
+}
+
+#textFooter{
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+
+#contIcon{
+    display: flex;     
+    margin-right: 10px;
+}
+
+.icon {
+    margin: 5px;
+    width: 30px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Grupo1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.newspaper {
+    background-color: rgb(235, 139, 14);
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    color: rgb(99, 99, 99);
+}
+
+.newspaper2 {
+    background-image: url(images/vista-do-papel-amarrotado-branco_1194-7544.webp);
+    font-family:  Impact, Haettenschweiler;
+    font-weight: 700;
+    color: blueviolet;
+}
+
+.magazine1 {
+    background-color: rgb(0, 128, 128);
+    color: rgb(73, 223, 14);
+    font-family: Verdana;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.magazine2 {
+    background-image: url(images/pink-pattern.png);
+    color: rgb(4, 0, 255);
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.magazine3 {
+    background-image: url(images/fundo-de-papel-amassado-castanho-textura-antiga-padrão-página-158064790.jpg);
+    color: rgb(1, 255, 255);
+    font-family: Tahoma;
+    font-weight: 700;
+}
+
+.magazine4 {
+    background-image: url(images/thumb2-black-paper-texture-4k-black-crumpled-paper-macro-black-paper.jpg);
+    color: rgb(255, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Grupo2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.medium {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.big {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.reallybig {
+    font-size: 40px;
+    padding: 15px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Grupo3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.rotateleft{
+    transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
+}
+
+.rotateright {
+    transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Grupo4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.skewleft {
+    transform: matrix(1, 0, 0.176327, 1, 0, 0);
+}
+
+.skewright {
+    transform: matrix(1, 0, -0.176327, 1, 0, 0);
+}
