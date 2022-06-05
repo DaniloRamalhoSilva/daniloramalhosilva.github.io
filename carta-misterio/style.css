@@ -1,3 +1,4 @@
+/*carta misterio*/
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +9,11 @@
 }
 
 body{
-    background-image: url(images/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    background-image: url(images/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
+    flex-wrap: wrap;
+    min-height: 100vh;    
 }
 
 .heder {

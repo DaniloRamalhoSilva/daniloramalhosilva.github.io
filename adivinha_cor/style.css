@@ -1,42 +1,86 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    color: wheat;
-}
-body{
-    background-image: url(imagem/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
 }
 
-main{
+body {
+    background-image: url(imagem/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
     display: flex;
     flex-direction: column;
-   align-items: center;
-   flex-grow: 2;
-   
+    align-items: center;
 }
 
-.heder{
-    display:flex; 
+.heder {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 7px solid #2fc18c;
     background-color: #036b52;
-    color: #fff;       
+    color: #fff;
     margin-bottom: 10px;
 }
 
-.imagemHeder{
-    margin-left: 20px;   
+.imagemHeder {
+    margin-left: 20px;
 }
 
-.textoHeder{
+.textoHeder {
     flex-grow: 1;
-    text-align: center;       
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 78vh;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #b1eed854;
+    width: 30%;
+    
+}
+
+#rgb-color{
+    margin-bottom : 25px;
 }
 
 .containerBall {
     display: flex;
+    margin: 20px;
+    border: #2fc18c solid 5px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #036b52;
 }
+
+.buttons {
+    background-color: #3c9c3e; /* Green */
+    border: solid 0.5px #358536;;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.buttons:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
 
 .ball {
     border: 1px solid black;
@@ -47,10 +91,8 @@ main{
     cursor: pointer;
 }
 
-.ball:hover{
-    margin: 3px;
-    width: 42px;
-    height: 42px;   
+.ball:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -58,20 +100,30 @@ main{
 
 /*  cria a footer */
 .footer {
+    width: 100%;
     display: flex;
     padding: 5px;
     margin-top: 20px;
-    align-items: center;  
+    align-items: center;
     color: white;
-    background-color: rgba(145, 145, 145, 0.945); 
+    background-color: rgba(145, 145, 145, 0.945);
+    
+
+
 }
 
-.footer span{    
+.footer span {
     text-align: center;
-    flex-grow: 1; 
+    flex-grow: 1;
+    font-size: 16px;
 }
 
-.icon {
+.icon {    
     margin: 5px;
     width: 30px;
+}
+
+.icons{
+    margin-right: 5px;
+    display: flex;
 }

@@ -35,7 +35,7 @@ window.onload = function () {
             tagResposta.innerText = 'Errou! Tente novamente!';
             score -= 1;
         }
-        tagScore.innerText = score;
+        tagScore.innerText ='Placar: ' + score;
     }
 
     function gerarCor() {
