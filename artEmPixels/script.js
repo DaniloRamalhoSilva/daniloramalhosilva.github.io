@@ -1,57 +1,74 @@
 window.onload = function () {
     let larguraDoQuadro = 30;
-    let auturaDoQuadro = 30;    
-    let totalDoQuado = larguraDoQuadro * auturaDoQuadro;
-    let tagPaletaCores = document.getElementsByClassName('color');
-    let tagBotao = document.getElementById('clear-board');
-    let tagPixels = document.getElementsByClassName('pixel');
-    let tagtext = document.getElementById('board-size');
-    let tagbtnVqv = document.getElementById('generate-board');
+    let auturaDoQuadro = 30;       
+    let tagPaletaCores = document.getElementsByClassName('color');       
     let tagCores = document.getElementById('color-palette');
-
-    //cria cores aleatorias
-    let coresProntas = ['Black', 'transparent', 'White', 'Beige', 'Yellow', 'Orange', 'Red', 'Pink', 'Purple', 'Blue', 'Green', 'Brown', 'Grey']
-    let cores = []
+    let tagBtnD = document.getElementById('btD');
+    let tagBtnE = document.getElementById('btE');
+    let tagImg = document.getElementById('imag');
+    let tagTextOdesafio = document.getElementById('desafio');
+    let cores = []  
+    let coresProntas = ['Black', '#c2ffe84d', 'White', 'Beige', 'Yellow', 'Orange', 'Red', 'Pink', 'Purple', 'Blue', 'Green', 'Brown', 'Grey']
+    let n = 0;
+    let imagens = [
+        {
+            url: 'desenhos/emojo.png',
+            quant: '19'
+        },
+        {
+            url: 'desenhos/estrela.png',
+            quant: '19'                       
+        },
+        {
+            url: 'desenhos/charmandes.jpg',
+            quant: '21'          
+        },
+        {
+            url: 'desenhos/pikachu.jpeg',
+            quant: '41'            
+        },
+    ];
+    
     for (i = 0; i <= 22; i += 1) {
         cores.push(gerarCor());
     }    
+
     cores.sort((a, b) => a[0] - b[0] > 0 ? 1 : -1 );
     criaPaletaDeCoresP()
     criaPaletaDeCores();
-    linePixelBoard(larguraDoQuadro);
-    preenchePixelBoard(auturaDoQuadro);
-
-    //limpa o quadro 
-    tagBotao.addEventListener('click', function () {
-        for (i = 0; i < totalDoQuado; i += 1) {
-            tagPixels[i].style.backgroundColor = 'transparent';
-        }
-    });
-
-    //cria o quadro de acordo com a quantidade 
-    tagbtnVqv.addEventListener('click', function () {
-        let qunt = tagtext.value;
-        if (qunt === '') {
-            alert('Board inválido!');
-        } else {
-            if (qunt > 100) {
-                qunt = 100;
-            } else if (qunt < 5) {
-                qunt = 5;
-            }
-            totalDoQuado = qunt * qunt;
-            removeQuadro()
-            linePixelBoard(qunt);
-            preenchePixelBoard(qunt);
-        }
-    });
+    
+    mudaImagem(n);
+   
 
     //seleciona a primeira cor
     tagPaletaCores[0].className = 'color selected';
 
+    tagBtnD.addEventListener('click', function(){ 
+        mudaImagem(n+=1);        
+    });
 
+    tagBtnE.addEventListener('click', function(){
+        mudaImagem(n-=1);        
+    });
+   
     //------------------------------------------------- Funçoes -----------------------------------------------
 
+    function mudaImagem(n){
+        tagTextOdesafio.innerText = `Desafio ${n+1}`;
+        tagBtnD.style.display = 'block';
+        tagBtnE.style.display = 'block';        
+        if(n === 0){                  
+            tagBtnE.style.display = 'none';            
+        }
+        if(n === imagens.length - 1 ){               
+            tagBtnD.style.display = 'none';            
+        }
+        
+        tagImg.src = imagens[n].url;        
+        removeQuadro()
+        linePixelBoard(imagens[n].quant );
+        preenchePixelBoard(imagens[n].quant );
+    }
 
     //remove o quadro 
     function removeQuadro() {
@@ -69,7 +86,7 @@ window.onload = function () {
             tagCor.style.backgroundColor = `rgba(${cor[0]}, ${cor[1]}, ${cor[2]})`;
             tagCores.appendChild(tagCor);
             tagCor.addEventListener('click', selecionaCor);
-            console.log(cor);
+            
         }
     }
     //cria paleta de cores
@@ -80,7 +97,7 @@ window.onload = function () {
             tagCor.style.backgroundColor = cor;
             tagCores.appendChild(tagCor);
             tagCor.addEventListener('click', selecionaCor);
-            console.log(cor);
+            
         }
     }
 
@@ -115,6 +132,7 @@ window.onload = function () {
     //cria as linhas da largura
     function preenchePixelBoard(largura) {
         let linhas = document.getElementsByClassName('line');
+        let clicado = false;
         for (let linha of linhas) {
             for (let i = 0; i < largura; i += 1) {
                 let divPixel = criaTeg('div');
@@ -130,7 +148,7 @@ window.onload = function () {
                 });
 
                 divPixel.addEventListener('mouseover', function () { //Referência do stackoVerflow,  perdi o link
-                    if (clicado == true) {
+                    if (clicado === true) {
                         this.style.backgroundColor = window.getComputedStyle(document.getElementsByClassName('selected')[0]).backgroundColor;
                     }
                 });

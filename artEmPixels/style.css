@@ -1,106 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
 
-#heder {
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    z-index: 999;
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 10px 0px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.3;
+}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagem/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
+    flex-wrap: wrap;
+}
+
+
+/*  cria as cabeçaroi  */
+.heder{
     border-bottom: 7px solid #2fc18c;
     background-color: #036b52;
     color: #fff;
-}
-
-
-#titulo {
-    margin-left: 32%;
-    display: inline-block;
-
-}
-
-#titulo h1 {
-    padding: 0px;
-    margin: 0px;
+    padding: 10px 0px;    
+    display:flex;    
     margin-bottom: 10px;
 }
 
-.image-45 {
-    display: inline-block;
-    margin-left: 40px;
-    width: 84px;
-    height: 50px;
-    max-width: 80%;
+.imagemHeder{
+    margin-left: 20px;   
 }
 
-#main {
-
-    padding-left: 20px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+.textoHeder{
+    margin-top: 10px;
+    flex-grow: 1;
+    text-align: center;       
 }
 
-#color-palette {
-    padding: 4px;
-    border: solid 2px black;
+/*  cria as cores  */
+.conteinerCor {
+    display: flex;
+    flex-wrap: wrap;
     width: 50px;
-    display: inline-block;
-    vertical-align: middle;
-
-
-}
-
-#painel {
-    position: absolute;
-    margin-left: 150px;
-    display: inline-block;
-    vertical-align: middle;
-    
-}
-
-#gabarito {
-    
-    margin-left: 550px;
-    margin-top: 25px;
-    display: inline-block;
-    
+    height: 500px;
+    padding: 6px;    
+    background-color: #c2ffe875;
 }
 
 .color {
     width: 20px;
     height: 20px;
     margin: 1px;
-    display: inline-block;
     border: 1px solid black;
+    cursor: pointer;
 }
 
-#pixel-board {
-    margin: auto;
-    margin-top: 5px;
-    border-spacing: 0.5px;
-    display: table;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+.main {
+    display: flex;   
+    flex-wrap: wrap;
+    padding: 10px;
+    min-height: 80vh;
+
+}
+
+.masterQuadro {
+    display: flex;   
+    align-items: center;
+    justify-content: center;    
+    flex-grow: 2;
+    margin-bottom: 10px;   
+}
+
+.masterGabarito {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    flex-grow: 1;    
+    margin-bottom: 10px;   
+}
+
+#desafio{
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.imag{
+    font-size: 35px;
+    margin: 28px;
+    color: #2fc18c;
+    cursor: pointer;    
+}
+
+.btn{
+    width: 100px;    
+}
+
+.imag:hover{
+    color: #0aee9a
+}
+
+.conteinerImagSeta{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;    
+}
+
+
+/*  cria a tela */
+.CotainerMenu {
+    margin-top: 10px;
+}
+
+.CotainerQudro {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .pixel {
     display: table-cell;
     width: 10px;
     height: 10px;
-    background-color: transparent;
     cursor: pointer;
-    border: 0.5px solid rgba(122, 124, 252, 0.158);
+    border: 0.5px solid rgba(3, 70, 12, 0.445);
+    background-color: #c2ffe84d;
 }
 
 .pixel:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.line {
-    display: table-row;
+    box-shadow: 0 12px 16px 0 rgba(192, 10, 10, 0.315), 0 17px 50px 0 rgba(255, 0, 0, 0.267);
 }
 
 
@@ -109,31 +136,21 @@
 
 
 
-#footer {
-    text-align: right;
-    width: 100%;
+/*  cria a footer */
+.footer {
+    display: flex;
     padding: 5px;
-    background-color: rgb(68, 73, 85);    
-    bottom: 0;
-    margin-top: 20px;
+    align-items: center;  
+    color: white;
+    background-color: rgba(145, 145, 145, 0.945); 
+}
+
+.footer span{    
+    text-align: center;
+    flex-grow: 1; 
 }
 
 .icon {
     margin: 5px;
     width: 30px;
-}
-
-#contIcon {
-    display: inline-block;
-    padding-right: 20px;
-    vertical-align: middle;
-}
-
-#textFooter {
-    text-align: center;
-    margin-right: 150px;
-    width: 650px;
-    display: inline-block;
-    color: white;
-    vertical-align: middle;
 }
