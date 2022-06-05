@@ -11,6 +11,7 @@
     flex-direction: column;
     background-image: url(imagem/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
     flex-wrap: wrap;
+    
 }
 
 
@@ -57,7 +58,7 @@
     display: flex;   
     flex-wrap: wrap;
     padding: 10px;
-    min-height: 80vh;
+    min-height: 77vh;
 
 }
 
@@ -143,6 +144,7 @@
     align-items: center;  
     color: white;
     background-color: rgba(145, 145, 145, 0.945); 
+    align-self: flex-end;
 }
 
 .footer span{    

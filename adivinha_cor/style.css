@@ -1,12 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: wheat;
+}
+body{
+    background-image: url(imagem/Matrix\ Code\ Live\ Wallpaper\ Free\ -\ DesktopHut_\ Free\ HD_4K\ Live\ Wallpapers\ for\ Windows\ &\ MacOS.gif);
 }
 
 main{
     display: flex;
     flex-direction: column;
    align-items: center;
+   flex-grow: 2;
+   
 }
 
 .heder{
@@ -68,3 +74,4 @@ main{
 .icon {
     margin: 5px;
     width: 30px;
+}
