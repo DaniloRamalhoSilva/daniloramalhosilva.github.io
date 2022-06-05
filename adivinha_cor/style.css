@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.heder{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    border-bottom: 7px solid #2fc18c;
+    background-color: #036b52;
+    color: #fff;       
+    margin-bottom: 10px;
+}
+
+.imagemHeder{
+    margin-left: 20px;   
+}
+
+.textoHeder{
+    flex-grow: 1;
+    text-align: center;       
+}
+
+.containerBall {
+    display: flex;
+}
+
+.ball {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.ball:hover{
+    margin: 3px;
+    width: 42px;
+    height: 42px;   
+}
+
+
+
+
+/*  cria a footer */
+.footer {
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+    align-items: center;  
+    color: white;
+    background-color: rgba(145, 145, 145, 0.945); 
+}
+
+.footer span{    
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.icon {
+    margin: 5px;
+    width: 30px;
