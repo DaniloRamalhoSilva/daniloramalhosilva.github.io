@@ -76,26 +76,24 @@ btnEnviar.addEventListener('click', (event) => {
     formes.style.display = 'none';
   } else {
     alert('É obrigatorio concordar  o uso das informações!');
-  }  
-  
+  }
+
 });
 
-
-
 divImg[0].addEventListener('mouseenter', () => img[0].style.opacity = '100%');
-divImg[0].addEventListener('mouseout', () => img[0].style.opacity= '0');
+divImg[0].addEventListener('mouseout', () => img[0].style.opacity = '0');
 
 divImg[1].addEventListener('mouseenter', () => img[1].style.opacity = '100%');
-divImg[1].addEventListener('mouseout', () => img[1].style.opacity= '0');
+divImg[1].addEventListener('mouseout', () => img[1].style.opacity = '0');
 
 divImg[3].addEventListener('mouseenter', () => img[2].style.opacity = '100%');
-divImg[3].addEventListener('mouseout', () => img[2].style.opacity= '0');
+divImg[3].addEventListener('mouseout', () => img[2].style.opacity = '0');
 
 divImg[2].addEventListener('mouseenter', () => img[3].style.opacity = '100%');
-divImg[2].addEventListener('mouseout', () => img[3].style.opacity= '0');
+divImg[2].addEventListener('mouseout', () => img[3].style.opacity = '0');
 
 divImg[4].addEventListener('mouseenter', () => img[4].style.opacity = '100%');
-divImg[4].addEventListener('mouseout', () => img[4].style.opacity= '0');
+divImg[4].addEventListener('mouseout', () => img[4].style.opacity = '0');
 
 divImg[5].addEventListener('mouseenter', () => {
   img[5].style.opacity = '50%';
@@ -106,7 +104,7 @@ divImg[5].addEventListener('mouseenter', () => {
   img[4].style.opacity = '100%'
 });
 divImg[5].addEventListener('mouseout', () => {
-  img[5].style.opacity= '0';
+  img[5].style.opacity = '0';
   img[5].style.opacity = '0';
   img[0].style.opacity = '0';
   img[1].style.opacity = '0';
@@ -115,24 +113,10 @@ divImg[5].addEventListener('mouseout', () => {
   img[4].style.opacity = '0';
 });
 
-
-
 house.addEventListener('click', () => {
-  img[0].style.opacity= '0';
-  img[1].style.opacity= '0';
-  img[3].style.opacity= '0';
-  img[2].style.opacity= '0';
-  img[house.selectedIndex - 1].style.opacity= '100%';
+  img[0].style.opacity = '0';
+  img[1].style.opacity = '0';
+  img[3].style.opacity = '0';
+  img[2].style.opacity = '0';
+  img[house.selectedIndex - 1].style.opacity = '100%';
 });
-
-
-
-
-const fan = (n) => {
-  for(i=0; i < n; i+=1 ){
-    n += n 
-  }
-  return n;
-};
-
-console.log(fan(1));

@@ -231,7 +231,6 @@ select option:first-child {
   width: 100%;
 }
 
-
 .containerImage{
   position: relative;
   width: 458px;
@@ -293,9 +292,6 @@ select option:first-child {
   z-index: 7;  
 }
 
-
-
-
 .d{
   position: absolute;
   width: 110px;
@@ -342,9 +338,6 @@ select option:first-child {
   top: 220px;
 }
 
-
 select {
   color: gray;
 }
-
-
