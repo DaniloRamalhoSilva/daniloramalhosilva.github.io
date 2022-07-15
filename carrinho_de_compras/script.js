@@ -52,7 +52,7 @@ const createCartItemElement = ({ sku, name, salePrice, image }) => {
   div2.appendChild(createProductImageElement(image, 'cart__image'));
   div1.appendChild(createCustomElement('span', 'cart__sku', sku));  
   div1.appendChild(createCustomElement('span', 'cart__title', name));
-  div1.appendChild(createCustomElement('span', 'cart__price', salePrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })))
+    div1.appendChild(createCustomElement('span', 'cart__price', salePrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })))
   
   li.appendChild(div2);
   li.appendChild(div1);
@@ -70,8 +70,7 @@ const addCarrinho = async (event) => {
     sku: data.id,
     name: data.title,
     image: data.thumbnail,
-  };
-  console.log();
+  };  
   const olElement = document.getElementsByClassName('cart__items')[0];
   olElement.appendChild(createCartItemElement(obj));
   atualizaStorege();
@@ -139,8 +138,34 @@ const clearCar = () => {
   });
 };
 
+const clearProd = () => {
+  const elementItens = document.getElementsByClassName('items')[0]
+  elementItens.innerHTML = '';
+}
+
+const pesquisaProd = () => {
+  clearProd();
+  const elementPesquisa = document.getElementById('pesquisa');
+  console.log(elementPesquisa.value);
+  
+  creatList(elementPesquisa.value);
+}
+
+const addEvent = () => {
+  const elementPesquisa = document.getElementById('pesquisa');
+  const elementBtnPesquisa = document.getElementsByClassName('fa-solid')[0];
+
+  elementBtnPesquisa.addEventListener('click', pesquisaProd);
+  elementPesquisa.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter'){
+      pesquisaProd();
+    }
+  })
+};
+
 window.onload = () => {
   creatList('compultador');
   loadCar();
   clearCar();
+  addEvent();
 };

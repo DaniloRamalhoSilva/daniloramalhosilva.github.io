@@ -18,8 +18,24 @@ body {
   height: 60px;
 }
 
+.pesquisa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%; 
+  position: relative;
+}
+
+.fa-solid{
+  color: grey;
+  font-size: 20px;
+  background-color: white;
+  padding: 6px;
+  border-radius:  0px 5px 5px 0px;
+}
+
 .container-title {
-  width: 80%;
+  width: 20%;
 }
 
 .title {
@@ -95,7 +111,7 @@ body {
   display: flex; 
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0; 
+  margin: 0px 0; 
 }
 
 .item {
@@ -106,7 +122,7 @@ body {
   width: 200px;
   border: 2px solid rgb(234, 234, 233);
   border-radius: 5px;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 .item .item__sku {
@@ -132,6 +148,13 @@ body {
   margin: 0;
   padding: 10px;
   color: white;
+  transition-duration: 0.5s;
+}
+
+.item .item__add:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  font-size: 15px;
+  padding: 9px; 
 }
 
 .item .item__price{
@@ -214,15 +237,10 @@ body {
 #pesquisa{
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(171, 174, 177);
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px ;
   width: 400px;
   padding: 7px;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.507);
 }
 
-.pesquisa{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
