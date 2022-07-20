@@ -1,8 +1,11 @@
 
 
 body{
-    background-image: url(./Imagens/matrix.png);
-    padding: 3%;    
+    background-image: url('./Imagens/e2e7ca273a778fbfa31cfe8584c7884f.jpg');
+    Background-repeat: no-repeat;
+    Background-size: cover;
+    background-color: rgb(0, 0, 0);
+       
 }
 
 h1, h2, h3, p{
