@@ -1,34 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import foto from '../Images/69921664.jpeg'
-
-import { Row, Col, Button, Offcanvas } from 'react-bootstrap';
+import { Row, Col, Figure } from 'react-bootstrap';
 
 function Home() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
-    <Row className='testRowHome'>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text
-        </Offcanvas.Body>
-      </Offcanvas>
-
-      <img className='fotoHome' src={foto} alt="" />
+    <Row >   
+      <Figure >
+        <Figure.Image
+        width="60%"
+        fluido
+        roundedCircle
+        alt="171x180"
+        src={foto}
+        />
+      </Figure>      
       <Col className='testCol'>
-        <h1>Danilo Ramalho Silva</h1>
+        <h3>Aqui é o lugar certo para conhecer meu trabalho e tudo sobre mim.</h3>
+        <br />        
+        <h6>Seja muito bem vindo!</h6>
+        <hr />
+        <p>
+          Sou Danilo Ramalho Silva, 32 anos, de São Paulo Capital, apaoixonado por tecnologia e desenvolvimento pessoal.
+        </p>
+        <p>
+          Me formei em Analise e Desenvolvimento de Sisteme em 2016 e atualmente estou me especializando em desenvolvimento web na Trybe com o intuito de me tornar um desenvolvedor full steck.
+        </p>
+        <p>
+          Se quiser saber um poquinho mais de como vim parar na programação e conhecer minha hestoria um pouco melhor rola ai até o “Sobre mim” você acaba de se tornar meu convidado especial.
+        </p>
+        <p>
+          Por aqui voce tambem pode ver meus trabalhos proficionais e academicos, minhas steks, formação academica, ultimos trabalho e ate algus dos meus hobs, sinta-se a vontade a casa site e todo seu.
+        </p>
       </Col>      
-    </Row>  
+    </Row>     
   );
 }
 

@@ -3,14 +3,12 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Sobre() {
+function About() {
   return (
     <Row className='testRow'>
       <Col  className='testCol'>
         <h1>Sobre Mim</h1>
         <hr />
-      </Col>
-      <Col  className='testCol'>
         <p>
           Descobri o mundo da programação há cerca de 10 anos. Na época eu trabalhava como programador e controle de produção em uma fábrica de plástico. Passados alguns meses de experiência, vi que só os conhecimentos básicos de Excel já não estavam atendendo às minhas necessidades e às da empresa.
         </p>
@@ -22,11 +20,10 @@ function Sobre() {
         </p>
         <p>
         Dentre os meus projeto, desenvolvi um sistema de controle de estoque e fluxo de caixa em C# para um centro de reciclagem.
-        </p>    
-          
-      </Col>
+        </p> 
+      </Col>    
     </Row>  
   );
 }
 
-export default Sobre;
+export default About;

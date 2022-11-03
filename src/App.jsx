@@ -1,15 +1,21 @@
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Sobre from './pages/Sobre';
-import './App.css';
-
-import Container from 'react-bootstrap/Container';
+import Navigationbar from './components/Navigationbar';
 
 function App() {
   return (
-    <Container>
-      <Home></Home>
-      <Sobre></Sobre>
-    </Container>  
+    <div className="App">
+        <Router>
+            <Navigationbar />
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route path='/about' component={About}/>
+                <Route path='/contact' component={Contact}/>
+            </Switch>
+        </Router>
+    </div>
   );
 }
 
