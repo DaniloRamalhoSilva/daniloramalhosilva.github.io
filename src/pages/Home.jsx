@@ -3,7 +3,7 @@ import foto from '../Images/69921664.jpeg'
 
 function Home() {
   return (
-    <div className='containerHome' >
+    <div className='containerHome' id='home'>
       <img className='fotoHome' src={foto} alt="" />
       <h6>Seja muito bem vindo!</h6>
       <br /> 
